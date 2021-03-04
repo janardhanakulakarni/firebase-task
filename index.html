@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Express Log-in Form</h3>
+    <input type="text" placeholder="Enter the first name"/>
+    <input type="text" placeholder="Enter the Last name"/>
+    
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Submit</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Express-login web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+    apiKey: "AIzaSyCX9-FvR-xGtJYvmS1QhqNr9ibzHBqsPGc",
+    authDomain: "fir-7f1cf.firebaseapp.com",
+    projectId: "fir-7f1cf",
+    storageBucket: "fir-7f1cf.appspot.com",
+    messagingSenderId: "322878297521",
+    appId: "1:322878297521:web:9d887f01c147f418e55990"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
